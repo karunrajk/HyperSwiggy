@@ -1,0 +1,85 @@
+.Navbar{
+
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar-menu{
+
+    /* display: grid; */
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    /* grid-style: none; */
+    list-style: none;
+    color: rgb(61, 65, 82);
+    outline-color:  rgb(61, 65, 82);
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
+    font-size: 18px;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+    transition: 0.3s;
+    /* position: relative; */
+
+}
+
+.Navbar li {
+    cursor: pointer;
+}
+.Navbar-menu :hover{
+
+color: rgb(255, 82, 0);
+}
+
+.Navbar-right{
+
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 40px;
+}
+
+.Navbar .logo {
+
+    width: 120px;
+}
+
+.Navbar button{
+    background: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.Navbar button:hover{
+
+    color: rgb(255, 82, 0);
+}
+
+.Navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(255, 82, 0);
+}
+
+.Navbar-search-icon{
+    position: relative;
+}
+
+.Navbar-search-icon .Dot{
+
+    position:   absolute;
+    min-width: 10px;
+    min-height: 10px;
+    /* border-radius: 10px 10px 5px 5px; */
+    border-radius: 5px;
+    background-color: rgb(96, 178, 70);
+    /* color: red; */
+    top: -8px;
+    right: -8px;
+    /* left: 0px; */
+
+}

@@ -1,0 +1,241 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 120px; /* Add fixed margin from left */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 120px; /* Add fixed margin from right */
+}
+
+/* Rest of your CSS remains the same */
+.logo {
+    /* height: 50px; */
+    object-fit: contain;
+    /* height: 50px; */
+    width: 50px;
+    cursor: pointer;
+
+    border-radius: 16px;
+}
+
+.location-selector {
+    display: flex;
+    align-items: center;
+}
+
+.other-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #3d4152;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    color: #fc8019;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #3d4152;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-item img {
+    height: 20px;
+}
+
+.new-tag {
+    background: #ffa700;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.cart {
+    position: relative;
+    pointer-events: auto;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background: #60b246;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    color: #fc8019;
+}
+
+.nav-item:hover img {
+    opacity: 0.8;
+}
+
+.cart-modal {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 360px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+    margin-top: 12px;
+    z-index: 1000;
+    border: 1px solid #e9e9eb;
+    cursor: default;
+    pointer-events: auto;
+}
+
+.cart-modal-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    border-bottom: 1px solid #f1f1f6;
+}
+
+.cart-modal-header .restaurant-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.cart-modal-header .restaurant-info {
+    flex: 1;
+}
+
+.cart-modal-header h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #282c3f;
+    margin-bottom: 4px;
+}
+
+.cart-modal-header p {
+    font-size: 12px;
+    color: #686b78;
+    margin-bottom: 4px;
+}
+
+.restaurant-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.restaurant-info h3 {
+    font-size: 16px;
+    color: #282c3f;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.restaurant-info p {
+    font-size: 12px;
+    color: #686b78;
+    margin-bottom: 4px;
+}
+
+.view-menu {
+    font-size: 13px;
+    color: #5d8ed5;
+    text-decoration: none;
+}
+
+.cart-items {
+    padding: 16px;
+    border-bottom: 1px solid #f1f1f6;
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #282c3f;
+}
+
+.cart-footer {
+    padding: 16px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #282c3f;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.extra-charges {
+    font-size: 12px;
+    color: #686b78;
+    margin-bottom: 16px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background: #fc8019;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: #f17012;
+}

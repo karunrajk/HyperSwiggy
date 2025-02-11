@@ -1,0 +1,102 @@
+.AddButton {
+    background-color: white;
+    /* color: red; */
+    border: 1px solid #d4d5d9;
+    padding: 8px 25px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    width: 120px;
+    /* height: 38px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+
+}
+
+.AddButtonContainer{
+    width: 100px;  /* Adjust based on your needs */
+    z-index: 1;
+    
+
+}
+
+
+.addButton:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+    border-color: #60b246;
+}
+
+.addButton:active {
+    transform: scale(0.98);
+}
+
+.add-button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+    border-color: #60b246;
+}
+
+.CounterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #d4d5d9;
+    border-radius: 6px;
+    padding: 8px 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    text-align: center;
+}
+
+.subtractButton{
+    background: none;
+    border: none;
+    color: #60b246;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.addButton{
+    background: none;
+    border: none;
+    color: #60b246;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.subtractButton:hover {
+    color: #48913a;
+}
+
+.addButton:hover {
+    color: #48913a;
+}
+.count {
+    color: #60b246;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.add-button {
+    width: 100%;
+    background-color: white;
+    color: #60b246;
+    border: 1px solid #d4d5d9;
+    padding: 8px 25px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}

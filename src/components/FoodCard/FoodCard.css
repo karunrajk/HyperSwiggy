@@ -1,0 +1,134 @@
+.FoodItemContainer{
+    display: flex;
+    flex-direction: row;
+    /* gap: 300px; */
+    margin: 12px auto;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 50px;
+    max-width: 800px;
+    width: 100%;
+    align-self: center;
+    justify-items: center;
+    padding: 20px auto;
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: auto;
+    box-sizing: border-box;
+    border-bottom: 1px rgb(40, 44, 63);
+    
+}
+
+.FoodListDisplay{
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+
+}
+.FoodItem{
+    /* display: flex;
+    flex-direction: rows;
+    gap: 20px; */
+    justify-items: center;
+    align-items: center;
+    margin: 12px auto;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+    /* border: 1px red; */
+    box-sizing: border-box;
+    border-radius: 12px;
+    height: 180px;
+    display: flex;
+    max-width: 800px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px black;
+    
+} 
+
+.LeftSection{
+    
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        /* position: absolute; */
+}
+
+.FoodImage {
+    width: 156;
+    height: 144px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.RightSection{
+    position: relative;
+    align-self: right;
+    right: 80px;
+    /* display: flex; */
+}
+
+.RightSection .AddButton{
+    position: absolute;
+    /* bottom: -50px; */
+    /* right: 30px; */
+    z-index: +100;
+}
+
+.RightSection .FoodImage{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+/* 
+.add-button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+    border-color: #60b246;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #d4d5d9;
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.counter-button {
+    background: none;
+    border: none;
+    color: #60b246;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.counter-button:hover {
+    color: #48913a;
+}
+
+.count {
+    color: #60b246;
+    font-weight: 600;
+    font-size: 16px;
+} */
+
+.image-container {
+    position: relative;
+    width: 118px;  /* Adjust based on your needs */
+    height: 96px;  /* Adjust based on your needs */
+}
+
+.button-overlay {
+    position: absolute;
+    bottom: -16px;  /* Adjust to position the button */
+    left: 28px;
+    transform: translateX(-50%);
+    width: 90%;  /* Slightly smaller than the image width */
+    z-index: 1;
+}

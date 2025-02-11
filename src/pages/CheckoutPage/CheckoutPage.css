@@ -1,0 +1,462 @@
+.checkout-container {
+    background-color: #f1f1f6;
+    min-height: 100vh;
+}
+
+.checkout-header {
+    background: white;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9e9eb;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.checkout-logo {
+    width: 34px;
+}
+
+.secure-text {
+    color: #282c3f;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.help-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #686b78;
+}
+
+.checkout-content {
+    display: flex;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.delivery-section {
+    flex: 1;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.address-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.address-subtitle {
+    color: #7e808c;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.address-card {
+    border: 1px solid #e9e9eb;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.deliver-here-btn {
+    background: #60b246;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.add-new-address {
+    width: 100%;
+    background: white;
+    border: 1px dashed #93959f;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.order-summary {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 0;
+}
+
+.restaurant-header {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e9e9eb;
+}
+
+.restaurant-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.restaurant-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.restaurant-details h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #282c3f;
+    margin-bottom: 4px;
+}
+
+.restaurant-details p {
+    font-size: 12px;
+    color: #686b78;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.veg-icon {
+    font-size: 12px;
+    color: #282c3f;
+}
+
+.item-name {
+    font-size: 14px;
+    color: #282c3f;
+}
+
+.quantity-price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.price-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.original-price {
+    font-size: 14px;
+    color: #93959f;
+    text-decoration: line-through;
+}
+
+.final-price {
+    font-size: 14px;
+    color: #282c3f;
+    font-weight: 500;
+}
+
+.cart-items {
+    margin: 16px 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.no-contact-delivery {
+    border: 1px solid #d4d5d9;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 4px;
+    display: flex;
+    gap: 12px;
+}
+
+.bill-details {
+    margin-top: 24px;
+    padding: 20px 0;
+    border-top: 1px solid #e9e9eb;
+}
+
+.bill-details h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #282c3f;
+}
+
+.bill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #686b78;
+    font-size: 14px;
+}
+
+.fee-label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.info-icon {
+    width: 14px;
+    height: 14px;
+    opacity: 0.7;
+}
+
+.add-tip {
+    color: #fc8019;
+    cursor: pointer;
+}
+
+.total-amount {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282c3f;
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 2px solid #282c3f;
+}
+
+.savings-banner {
+    margin: 24px 0;
+    padding: 12px;
+    background-color: #f1f7ee;
+    color: #60b246;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.savings-box {
+    background: #f1f7ee;
+    color: #60b246;
+    padding: 16px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 16px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.review-warning {
+    background: #fff8db;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.review-warning h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #282c3f;
+    margin-bottom: 8px;
+}
+
+.review-warning p {
+    font-size: 14px;
+    color: #686b78;
+    margin-bottom: 8px;
+}
+
+.review-box {
+    background: #fff8db;
+    padding: 16px;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+.review-box h4 {
+    font-size: 14px;
+    color: #282c3f;
+    margin-bottom: 8px;
+}
+
+.review-box p {
+    font-size: 12px;
+    color: #686b78;
+    margin-bottom: 8px;
+}
+
+.read-policy {
+    color: #5d8ed5;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.order-details {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.suggestions-box {
+    background: #f8f8f8;
+    padding: 16px;
+    margin: 16px 0;
+    color: #93959f;
+    border-radius: 4px;
+}
+
+.apply-coupon {
+    border: 1px dashed #93959f;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d4d5d9;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.quantity-controls button {
+    border: none;
+    background: none;
+    color: #60b246;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.right-section {
+    width: 400px;
+}
+
+.payment-section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.payment-section h2 {
+    font-size: 1.2rem;
+    color: #282c3f;
+    margin-bottom: 20px;
+}
+
+.payment-method-section {
+    background: white;
+    border-radius: 8px;
+    padding: 32px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.payment-icon {
+    margin-bottom: 16px;
+}
+
+.payment-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.payment-method-section h2 {
+    font-size: 24px;
+    color: #282c3f;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.payment-button-container {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.proceed-to-pay-btn {
+    width: 100%;
+    padding: 14px;
+    background: #60b246;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.proceed-to-pay-btn:hover {
+    background: #48a233;
+}
+
+.login-prompt {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e9e9eb;
+    border-radius: 8px;
+}
+
+.login-prompt h3 {
+    color: #282c3f;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.login-btn {
+    color: #60b246;
+    background: transparent;
+    border: 1px solid #60b246;
+    padding: 12px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #fafafa;
+}
