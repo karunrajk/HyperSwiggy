@@ -11,7 +11,7 @@ const Navbar = () => {
     const [menu, setMenu] = useState("Home");
     const [showLogin, setShowLogin] = useState(false);
     const [showCartModal, setShowCartModal] = useState(false);
-    const { isLoggedIn, userName, userLocation } = useAuth();
+    const { isLoggedIn, userName, userLocation, login } = useAuth();
 
     const {cartItems, restaurantInfo} = useContext(StoreContext);
     const navigate = useNavigate();
@@ -22,34 +22,13 @@ const Navbar = () => {
     };
 
     const handleLoginSuccess = () => {
-        login("Karun");
         setShowLogin(false);
     };
 
     const cartTotal = Object.values(cartItems).reduce((total, item) => total + (item.price * item.quantity), 0);
 
-    const handleHomeClick = () => {
-        setMenu("Home");
-        navigate('/');
-    };
-
-    const handleOffersClick = () => {
-        setMenu("Offers");
-        navigate('/');
-    };
-
-    const handleHelpClick = () => {
-        setMenu("Help");
-        navigate('/');
-    };
-
-    const handleSignInClick = () => {
-        setMenu("Sign In");
-        navigate('/');
-    };
-
-    const handleCartClick = () => {
-        setMenu("Cart");
+    const handleNavClick = (menuItem) => {
+        setMenu(menuItem);
         navigate('/');
     };
 
@@ -84,7 +63,7 @@ const Navbar = () => {
                 </svg>
                 <div className='location-selector'>
                     <button className='other-button'>
-                        {locationDisplay.type}
+                        <div>{locationDisplay.type}</div>
                         <span>{locationDisplay.address}</span>
                         <span className='dropdown-arrow'>▼</span>
                     </button>
@@ -92,35 +71,45 @@ const Navbar = () => {
             </div>
 
             <div className='navbar-right'>
-                <div className='nav-item'>
+                <div className='nav-item' onClick={() => handleNavClick('Corporate')}>
                     <img src={assets.corporate_icon} alt="" />
                     <span>Swiggy Corporate</span>
                 </div>
                 
-                <div className='nav-item'>
+                <div className='nav-item' onClick={() => handleNavClick('Search')}>
                     <img src={assets.search_icon} alt="" />
                     <span>Search</span>
                 </div>
                 
-                <div className='nav-item'>
+                <div className='nav-item' onClick={() => handleNavClick('Offers')}>
                     <img src={assets.offers_icon} alt="" />
                     <span>Offers</span>
                     <span className='new-tag'>NEW</span>
                 </div>
                 
-                <div className='nav-item'>
+                <div className='nav-item' onClick={() => handleNavClick('Help')}>
                     <img src={assets.help_icon} alt="" />
                     <span>Help</span>
                 </div>
                 
-                <div className='nav-item' onClick={() => !isLoggedIn && setShowLogin(true)}>
+                <div className='nav-item' 
+                    onClick={() => {
+                        if (!isLoggedIn) {
+                            setShowLogin(true);
+                        }
+                        handleNavClick('SignIn');
+                    }}
+                >
                     <img src={assets.profile_icon} alt="" />
                     <span>{isLoggedIn ? userName : 'Sign In'}</span>
                 </div>
                 
                 <div 
                     className='nav-item cart'
-                    onClick={() => setShowCartModal(!showCartModal)}
+                    onClick={() => {
+                        setShowCartModal(!showCartModal);
+                        handleNavClick('Cart');
+                    }}
                 >
                     <img src={assets.basket_icon} alt="" />
                     <span>Cart</span>
@@ -180,7 +169,12 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {showLogin && <LoginPopUp onClose={() => setShowLogin(false)} onLoginSuccess={handleLoginSuccess} />}
+            {showLogin && (
+                <LoginPopUp 
+                    onClose={() => setShowLogin(false)}
+                    onLoginSuccess={handleLoginSuccess}
+                />
+            )}
         </div>
     )
 }

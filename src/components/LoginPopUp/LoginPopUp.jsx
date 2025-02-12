@@ -28,12 +28,17 @@ import { useAuth } from '../../context/AuthContext';
             }
         };
     
-        const handleVerifyOTP = (e) => {
+        const handleVerifyOTP = async (e) => {
             e.preventDefault();
-            console.log('Verifying OTP:', otp);
-            login("Karun");  // Use login from AuthContext
-            onLoginSuccess();
-            onClose();  // Add this line to close the popup
+            try {
+                console.log('Verifying OTP:', otp);
+                await login("Karun");  // Wait for login to complete
+                if (onLoginSuccess) onLoginSuccess();
+                if (onClose) onClose();  // Make sure onClose is called
+                setShowOTP(false);  // Reset OTP state
+            } catch (error) {
+                console.error('Login failed:', error);
+            }
         };
     
 

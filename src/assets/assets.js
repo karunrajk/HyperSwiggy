@@ -2,6 +2,7 @@ import basket_icon from './basket_icon.png'
 import logo from './logo.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
+
 // import menu_1 from './menu_1.png'
 // import menu_2 from './menu_2.png'
 // import menu_3 from './menu_3.png'
@@ -11,6 +12,7 @@ import search_icon from './search_icon.png'
 // import menu_7 from './menu_7.png'
 // import menu_8 from './menu_8.png'
 
+import login_illustration from './login_illustration.avif'
 import menu_1 from './menu1_1.avif'
 import menu_2 from './menu1_2.avif'
 import menu_3 from './menu1_3.avif'
@@ -101,7 +103,8 @@ export const assets = {
     logout_icon,
     bag_icon,
     parcel_icon,
-    wallet_icon
+    wallet_icon,
+    login_illustration
 }
 
 export const menu_list = [
