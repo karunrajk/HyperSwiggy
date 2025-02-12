@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header'
 import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
 import { useParams } from 'react-router-dom'
 import SearchBar from '../../components/SearchBar/SearchBar'
-import Navbar from '../../components/navbar/navbar'
+import Navbar from '../../components/Navbar/Navbar'
 
 const RestaurantPage = () => {
 

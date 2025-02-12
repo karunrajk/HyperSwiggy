@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Home.css'
 import Restaurant from '../../components/Restaurant/Restaurant'
 import Header from '../../components/Header/Header';
-import Navbar from '../../components/navbar/navbar';
+import Navbar from '../../components/Navbar/Navbar';
 export default function Home() {
     const [restaurant, setRestaurant] = useState("All");
   return (

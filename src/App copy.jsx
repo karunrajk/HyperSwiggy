@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/navbar/navbar'
+import Navbar from './components/Navbar/Navbar'
 import { Routes,Route } from 'react-router-dom'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Restaurant from './pages/RestaurantPage/RestaurantPage'
