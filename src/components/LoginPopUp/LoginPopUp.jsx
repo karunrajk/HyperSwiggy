@@ -33,6 +33,7 @@ import { useAuth } from '../../context/AuthContext';
             console.log('Verifying OTP:', otp);
             login("Karun");  // Use login from AuthContext
             onLoginSuccess();
+            onClose();  // Add this line to close the popup
         };
     
 

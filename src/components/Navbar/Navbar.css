@@ -28,15 +28,16 @@
 
 /* Rest of your CSS remains the same */
 .logo {
-    /* height: 50px; */
-    object-fit: contain;
-    /* height: 50px; */
+    height: 50px;
     width: 50px;
     cursor: pointer;
-
-    border-radius: 16px;
+    /* padding: 8px; */
+    transition: transform 0.3s ease;
 }
 
+.logo:hover {
+    transform: scale(1.1);
+}
 .location-selector {
     display: flex;
     align-items: center;
@@ -239,3 +240,4 @@
 .checkout-btn:hover {
     background: #f17012;
 }
+
